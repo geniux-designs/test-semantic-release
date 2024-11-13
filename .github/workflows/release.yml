@@ -1,0 +1,53 @@
+name: Release Packages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write # to be able to publish a GitHub release
+  issues: write # to be able to comment on released issues
+  pull-requests: write # to be able to comment on released pull requests
+#  id-token: write # to enable use of OIDC for npm provenance
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Echo Variables
+        run: |
+          echo "Check to see if GITHUB_TOKEN is set"
+          echo "Check to see if NPM_TOKEN is set"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Verify Variables
+        run: |
+          if [ -z "$GITHUB_TOKEN" ]; then echo "GITHUB_TOKEN is not set"; else echo "GITHUB_TOKEN is set"; fi
+          if [ -z "$NPM_TOKEN" ]; then echo "NPM_TOKEN is not set"; else echo "NPM_TOKEN is set"; fi
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.12.3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run Semantic Release
+        run: pnpm release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
