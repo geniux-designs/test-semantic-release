@@ -1,0 +1,22 @@
+{
+	"name": "@geniux/test-semantic-release",
+	"version": "0.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/geniux-designs/test-semantic-release.git"
+	},
+	"main": "./index.js",
+	"files": [
+		"index.js",
+		"README.md"
+	],
+	"scripts": {
+		"release": "semantic-release --dry-run"
+	},
+	"devDependencies": {
+		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/git": "^10.0.1",
+		"@semantic-release/github": "^11.0.1",
+		"semantic-release": "^24.2.0"
+	}
+}
