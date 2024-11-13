@@ -44,8 +44,10 @@ export default {
                 assets: [
                     { path: "dist/**", label: "Compiled code" },
                 ],
-                releaseNotes: {
-                    changelogTitle: (version, releaseDate) => `v${version} - ${releaseDate}`
+                changelogTitle: (version, releaseDate) => {
+                    // Extract the version by stripping everything out up to the last dash
+                    const cleanVersion = version.split('-').pop();
+                    return `v${cleanVersion} - ${releaseDate}`;
                 }
             },
         ]
