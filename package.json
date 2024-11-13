@@ -3,7 +3,10 @@
 	"version": "0.0.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/geniux-designs/test-semantic-release.git"
+		"url": "https://github.com/geniux-designs/test-semantic-release"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"main": "./index.js",
 	"files": [
