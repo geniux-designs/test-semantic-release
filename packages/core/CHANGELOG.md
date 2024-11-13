@@ -2,6 +2,11 @@
 
  @geniux/test-semantic-release-react
 
+## @geniux/test-semantic-release-core-v1.4.1
+### 🐞Bug Fixes
+
+* clean version title in github release ([97dc952](https://github.com/geniux-designs/test-semantic-release/commit/97dc952c069e8eb088d0f6fc27b21cc29fb159f4))
+
 ## @geniux/test-semantic-release-core-v1.4.0
 ### 🚀 Features
 
