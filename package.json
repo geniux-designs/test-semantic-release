@@ -1,6 +1,7 @@
 {
 	"name": "@geniux/test-semantic-release",
 	"version": "1.1.0",
+	"packageManager": "pnpm@9.12.3",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/geniux-designs/test-semantic-release"
@@ -14,12 +15,13 @@
 		"README.md"
 	],
 	"scripts": {
-		"release": "semantic-release"
+		"release": "turbo semantic-release"
 	},
 	"devDependencies": {
 		"@semantic-release/changelog": "^6.0.3",
 		"@semantic-release/git": "^10.0.1",
 		"@semantic-release/github": "^11.0.1",
-		"semantic-release": "^24.2.0"
+		"semantic-release": "^24.2.0",
+		"turbo": "^2.2.3"
 	}
 }
