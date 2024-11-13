@@ -1,3 +1,10 @@
+# @geniux/test-semantic-release-react-v1.0.0 (2024-11-13)
+
+
+### Features
+
+* **react:** added an empty react package ([fbbff98](https://github.com/geniux-designs/test-semantic-release/commit/fbbff98dd49b63064770fd4be9c88d44312d5e86))
+
 # [@geniux/test-semantic-release-core-v1.1.0](https://github.com/geniux-designs/test-semantic-release/compare/@geniux/test-semantic-release-core-v1.0.0...@geniux/test-semantic-release-core-v1.1.0) (2024-11-13)
 
 
