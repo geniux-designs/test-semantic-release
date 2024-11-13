@@ -1,3 +1,10 @@
+# [@geniux/test-semantic-release-core-v1.1.1](https://github.com/geniux-designs/test-semantic-release/compare/@geniux/test-semantic-release-core-v1.1.0...@geniux/test-semantic-release-core-v1.1.1) (2024-11-13)
+
+
+### Bug Fixes
+
+* **core:** more readme ([19b9d53](https://github.com/geniux-designs/test-semantic-release/commit/19b9d5346c3afefc7a470a82fa68850e422459fb))
+
 # [@geniux/test-semantic-release-core-v1.1.0](https://github.com/geniux-designs/test-semantic-release/compare/@geniux/test-semantic-release-core-v1.0.0...@geniux/test-semantic-release-core-v1.1.0) (2024-11-13)
 
 
