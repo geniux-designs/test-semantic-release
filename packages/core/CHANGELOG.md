@@ -1,3 +1,10 @@
+# [@geniux/test-semantic-release-core-v1.2.0](https://github.com/geniux-designs/test-semantic-release/compare/@geniux/test-semantic-release-core-v1.1.1...@geniux/test-semantic-release-core-v1.2.0) (2024-11-13)
+
+
+### Features
+
+* converted to typescript and builds a dist ([20c7638](https://github.com/geniux-designs/test-semantic-release/commit/20c7638b44117c13f49f6401a73b6cb5019a8405))
+
 # [@geniux/test-semantic-release-core-v1.1.1](https://github.com/geniux-designs/test-semantic-release/compare/@geniux/test-semantic-release-core-v1.1.0...@geniux/test-semantic-release-core-v1.1.1) (2024-11-13)
 
 
