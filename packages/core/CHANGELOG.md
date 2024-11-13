@@ -1,3 +1,12 @@
+# Changelog for @geniux/test-semantic-release-core
+
+# [@geniux/test-semantic-release-core-v1.3.0](https://github.com/geniux-designs/test-semantic-release/compare/@geniux/test-semantic-release-core-v1.2.0...@geniux/test-semantic-release-core-v1.3.0) (2024-11-13)
+
+
+### Features
+
+* **core:** create a github release ([bec8171](https://github.com/geniux-designs/test-semantic-release/commit/bec8171ce9a85b047c4d09408b817dfb6504edf3))
+
 # [@geniux/test-semantic-release-core-v1.2.0](https://github.com/geniux-designs/test-semantic-release/compare/@geniux/test-semantic-release-core-v1.1.1...@geniux/test-semantic-release-core-v1.2.0) (2024-11-13)
 
 
