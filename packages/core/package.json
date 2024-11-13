@@ -4,7 +4,7 @@
 	"packageManager": "pnpm@9.12.3",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/geniux-designs/test-semantic-release"
+		"url": "git@github.com:geniux-designs/test-semantic-release.git"
 	},
 	"publishConfig": {
 		"access": "public"
