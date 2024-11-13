@@ -1,3 +1,12 @@
+# Changelog for
+
+ @geniux/test-semantic-release-react
+
+## @geniux/test-semantic-release-core-v1.4.0
+### 🚀 Features
+
+* new changelog format ([b098339](https://github.com/geniux-designs/test-semantic-release/commit/b09833968ed77c99b0ed08081a8902a48383c054))
+
 # Changelog for @geniux/test-semantic-release-core
 
 ## @geniux/test-semantic-release-core-v1.3.1 - 2024-11-13
