@@ -1,3 +1,14 @@
+# Changelog
+
+ @geniux/test-semantic-release-react
+
+# [@geniux/test-semantic-release-react-v1.2.1](https://github.com/geniux-designs/test-semantic-release/compare/@geniux/test-semantic-release-react-v1.2.0...@geniux/test-semantic-release-react-v1.2.1) (2024-11-13)
+
+
+### Bug Fixes
+
+* changelog ([183a883](https://github.com/geniux-designs/test-semantic-release/commit/183a8830c626aa8291a32dfd03eefbe41cbfbbf6))
+
 # Changelog for @geniux/test-semantic-release-react
 
 # [@geniux/test-semantic-release-react-v1.2.0](https://github.com/geniux-designs/test-semantic-release/compare/@geniux/test-semantic-release-react-v1.1.0...@geniux/test-semantic-release-react-v1.2.0) (2024-11-13)

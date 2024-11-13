@@ -1,5 +1,10 @@
 # Changelog for @geniux/test-semantic-release-core
 
+## @geniux/test-semantic-release-core-v1.3.1 - 2024-11-13
+### Bug Fixes
+
+* changelog ([183a883](https://github.com/geniux-designs/test-semantic-release/commit/183a8830c626aa8291a32dfd03eefbe41cbfbbf6))
+
 # [@geniux/test-semantic-release-core-v1.3.0](https://github.com/geniux-designs/test-semantic-release/compare/@geniux/test-semantic-release-core-v1.2.0...@geniux/test-semantic-release-core-v1.3.0) (2024-11-13)
 
 

@@ -28,6 +28,7 @@
 		"@semantic-release/github": "^11.0.1",
 		"semantic-release": "^24.2.0",
 		"semantic-release-monorepo": "^8.0.2",
+		"conventional-changelog-conventionalcommits": "^8",
 		"turbo": "^2.2.3",
 		"tsup": "^8",
 		"typescript": "^5"
