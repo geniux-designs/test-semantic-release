@@ -11,8 +11,9 @@ export default {
         [
             "@semantic-release/changelog",
             {
-                "changelogFile": "./CHANGELOG.md"
-            }
+                changelogFile: "./CHANGELOG.md",
+                changelogTitle: "# Changelog for @geniux/test-semantic-release-core",
+            },
         ],
         "@semantic-release/npm",
         [
@@ -22,5 +23,13 @@ export default {
                 "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
             }
         ],
+        [
+            "@semantic-release/github",
+            {
+                assets: [
+                    { path: "dist/**", label: "Compiled code" },
+                ],
+            },
+        ]
     ]
 };
