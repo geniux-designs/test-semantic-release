@@ -1,1 +1,1 @@
-export const hello = "Hello Semantic Release";
+export const hello = "Hello Semantic Release with Turbo";
