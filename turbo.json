@@ -1,5 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["NPM_TOKEN", "GITHUB_TOKEN"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
@@ -7,6 +8,7 @@
     },
     "release": {
       "dependsOn": ["^release"],
+      "env": ["NPM_TOKEN", "GITHUB_TOKEN"],
       "cache": false
     },
     "dev": {

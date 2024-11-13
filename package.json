@@ -15,6 +15,7 @@
 		"README.md"
 	],
 	"scripts": {
+		"release2": "pnpm -r run release --workspace-concurrency=1",
 		"release": "turbo release"
 	},
 	"devDependencies": {
