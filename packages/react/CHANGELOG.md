@@ -2,6 +2,15 @@
 
  @geniux/test-semantic-release-react
 
+## @geniux/test-semantic-release-react-v2.0.0
+### ⚠ BREAKING CHANGES
+
+* **react:** This is a breaking change
+
+### Bug Fixes
+
+* **react:** testing breaking change ([46b96b7](https://github.com/geniux-designs/test-semantic-release/commit/46b96b771464d3bb0764dc8d884dc39da087c0d5))
+
 ## @geniux/test-semantic-release-react-v1.3.1
 ### 🐞Bug Fixes
 
