@@ -7,32 +7,47 @@ export default {
     branches: ["main"],
     plugins: [
         "@semantic-release/commit-analyzer",
-        "@semantic-release/release-notes-generator",
+        [
+            "@semantic-release/release-notes-generator",
+            {
+                preset: "conventionalcommits",
+                presetConfig: {
+                    types: [
+                        { type: "feat", section: "🚀 Features" },
+                        { type: "fix", section: "🐞Bug Fixes" },
+                        { type: "docs", section: "🗎 Documentation" },
+                    ],
+                },
+                writerOpts: {
+                    headerPartial: `## {{version}}`, // This controls the version title format in the changelog
+                },
+            },
+        ],
         [
             "@semantic-release/changelog",
             {
                 changelogFile: "./CHANGELOG.md",
-                changelogTitle: "# Changelog\n\n @geniux/test-semantic-release-react",
+                changelogTitle: "# Changelog for\n\n @geniux/test-semantic-release-react",
             },
         ],
-        // "@semantic-release/npm",
-        // [
-        //     "@semantic-release/git",
-        //     {
-        //         "assets": ["./CHANGELOG.md", "./package.json"],
-        //         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-        //     }
-        // ],
-        // [
-        //     "@semantic-release/github",
-        //     {
-        //         assets: [
-        //             { path: "dist/**", label: "Compiled code" },
-        //         ],
-        //         releaseNotes: {
-        //             changelogTitle: (version, releaseDate) => `${version} - ${releaseDate}`
-        //         }
-        //     },
-        // ]
+        "@semantic-release/npm",
+        [
+            "@semantic-release/git",
+            {
+                "assets": ["./CHANGELOG.md", "./package.json"],
+                "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+            }
+        ],
+        [
+            "@semantic-release/github",
+            {
+                assets: [
+                    { path: "dist/**", label: "Compiled code" },
+                ],
+                releaseNotes: {
+                    changelogTitle: (version, releaseDate) => `v${version} - ${releaseDate}`
+                }
+            },
+        ]
     ]
 };
