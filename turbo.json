@@ -6,7 +6,8 @@
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "release": {
-      "dependsOn": ["^release"]
+      "dependsOn": ["^release"],
+      "cache": false
     },
     "dev": {
       "persistent": true,
