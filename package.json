@@ -16,7 +16,7 @@
 	],
 	"scripts": {
 		"release2": "pnpm -r run release --workspace-concurrency=1",
-		"release": "turbo release"
+		"release": "turbo release --concurrency=1"
 	},
 	"devDependencies": {
 		"@semantic-release/changelog": "^6.0.3",
