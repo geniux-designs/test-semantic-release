@@ -14,8 +14,17 @@ export default {
                 presetConfig: {
                     types: [
                         { type: "feat", section: "🚀 Features" },
-                        { type: "fix", section: "🐞Bug Fixes" },
-                        { type: "docs", section: "🗎 Documentation" },
+                        { type: "fix", section: "🐞 Bug Fixes" },
+                        { type: "docs", section: "📝 Documentation" },
+                        { type: "style", section: "💅 Code Style" },
+                        { type: "refactor", section: "♻️ Code Refactoring" },
+                        { type: "perf", section: "⚡ Performance Improvements" },
+                        { type: "test", section: "🧪 Tests" },
+                        { type: "build", section: "📦 Build System" },
+                        { type: "ci", section: "🔧 Continuous Integration" },
+                        { type: "chore", section: "📌 Chores" },
+                        { type: "revert", section: "⏪ Reverts" },
+                        { type: "BREAKING CHANGE", section: "💥 Breaking Changes" },
                     ],
                 },
                 writerOpts: {
